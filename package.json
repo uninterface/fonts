@@ -1,0 +1,33 @@
+{
+  "name": "@uninterface/fonts",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uninterface/fonts.git"
+  },
+  "type": "module",
+  "description": "Optional shared default font set for Uninterface applications.",
+  "files": [
+    "src/*.css",
+    "docs/"
+  ],
+  "scripts": {
+    "test": "node scripts/check-package.mjs"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    "./font.css": "./src/font.css",
+    "./font-bundled.css": "./src/font-bundled.css"
+  },
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "dependencies": {
+    "@fontsource-variable/noto-sans": "5.3.0",
+    "@fontsource-variable/noto-sans-sc": "5.3.1",
+    "@fontsource-variable/noto-sans-tc": "5.3.1"
+  }
+}

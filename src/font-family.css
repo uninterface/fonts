@@ -1,0 +1,23 @@
+/* Shared default set; application overrides are resolved by the backend. */
+:root,
+body,
+[lang] {
+  --uninterface-font-set-family:
+    'Noto Sans Variable', 'Noto Sans SC Variable', system-ui, sans-serif;
+}
+
+:root:lang(zh-Hant),
+body:lang(zh-Hant),
+[lang]:lang(zh-Hant),
+:root:lang(zh-TW),
+body:lang(zh-TW),
+[lang]:lang(zh-TW),
+:root:lang(zh-HK),
+body:lang(zh-HK),
+[lang]:lang(zh-HK),
+:root:lang(zh-MO),
+body:lang(zh-MO),
+[lang]:lang(zh-MO) {
+  --uninterface-font-set-family:
+    'Noto Sans Variable', 'Noto Sans TC Variable', system-ui, sans-serif;
+}
